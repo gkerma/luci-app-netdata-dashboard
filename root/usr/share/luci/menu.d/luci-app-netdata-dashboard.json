@@ -1,0 +1,45 @@
+{
+	"admin/status/netdata-dashboard": {
+		"title": "Netdata Dashboard",
+		"order": 5,
+		"action": {
+			"type": "view",
+			"path": "netdata-dashboard/realtime"
+		},
+		"depends": {
+			"acl": [ "luci-app-netdata-dashboard" ]
+		}
+	},
+	"admin/status/netdata-dashboard/realtime": {
+		"title": "Real-time",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "netdata-dashboard/realtime"
+		}
+	},
+	"admin/status/netdata-dashboard/system": {
+		"title": "System",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "netdata-dashboard/system"
+		}
+	},
+	"admin/status/netdata-dashboard/network": {
+		"title": "Network",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "netdata-dashboard/network"
+		}
+	},
+	"admin/status/netdata-dashboard/processes": {
+		"title": "Processes",
+		"order": 40,
+		"action": {
+			"type": "view",
+			"path": "netdata-dashboard/processes"
+		}
+	}
+}
