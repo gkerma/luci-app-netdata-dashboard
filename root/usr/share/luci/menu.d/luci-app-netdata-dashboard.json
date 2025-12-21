@@ -1,45 +1,29 @@
 {
-	"admin/status/netdata-dashboard": {
-		"title": "Netdata Dashboard",
-		"order": 5,
+	"admin/secubox/monitoring/netdata": {
+		"title": "Netdata",
+		"order": 10,
 		"action": {
-			"type": "view",
-			"path": "netdata-dashboard/realtime"
+			"type": "firstchild"
 		},
 		"depends": {
-			"acl": [ "luci-app-netdata-dashboard" ]
+			"acl": ["luci-app-netdata-dashboard"],
+			"uci": {"netdata": true}
 		}
 	},
-	"admin/status/netdata-dashboard/realtime": {
-		"title": "Real-time",
+	"admin/secubox/monitoring/netdata/dashboard": {
+		"title": "Dashboard",
 		"order": 10,
 		"action": {
 			"type": "view",
-			"path": "netdata-dashboard/realtime"
+			"path": "netdata/dashboard"
 		}
 	},
-	"admin/status/netdata-dashboard/system": {
-		"title": "System",
-		"order": 20,
+	"admin/secubox/monitoring/netdata/settings": {
+		"title": "Settings",
+		"order": 90,
 		"action": {
 			"type": "view",
-			"path": "netdata-dashboard/system"
-		}
-	},
-	"admin/status/netdata-dashboard/network": {
-		"title": "Network",
-		"order": 30,
-		"action": {
-			"type": "view",
-			"path": "netdata-dashboard/network"
-		}
-	},
-	"admin/status/netdata-dashboard/processes": {
-		"title": "Processes",
-		"order": 40,
-		"action": {
-			"type": "view",
-			"path": "netdata-dashboard/processes"
+			"path": "netdata/settings"
 		}
 	}
 }

@@ -16,7 +16,7 @@ PKG_MAINTAINER:=Gandalf <contact@cybermind.fr>
 
 LUCI_TITLE:=LuCI Netdata Dashboard
 LUCI_DESCRIPTION:=Real-time system monitoring dashboard with Netdata integration for OpenWrt
-LUCI_DEPENDS:=+luci-base +luci-lib-jsonc +rpcd +rpcd-mod-luci
+LUCI_DEPENDS:=+luci-base +luci-app-secubox +luci-lib-jsonc +rpcd +rpcd-mod-luci
 
 LUCI_PKGARCH:=all
 
